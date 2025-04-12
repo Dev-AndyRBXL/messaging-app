@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+  </head>
+  <body>
+    <% if (users) { %> <% for (const user of users) { %>
+    <div id="<%= user.id %>"><%= user.name %></div>
+    <% } %> <% } else if (user) { %>
+    <div id="<%= user.name %>"><%= user.name %></div>
+    <% } %>
+  </body>
+</html>
